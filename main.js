@@ -56,8 +56,16 @@ const buttonsOnDom = () => {
   renderToDom("#button-container", domString);
 };
 
+const btn = (array) => {
+  let btnShow = "";
+    if (!array.mvArmy) {
+      btnShow += `<button type="button" id="expel--${array.id}">Expel</button>`
+    }; 
+  return btnShow;
+};
+
 const cardsOnDom = (array) => {
-  let domString = "";
+  let domString = ""
   pic();
 
   for (const user of array) {
@@ -68,15 +76,15 @@ const cardsOnDom = (array) => {
         <img src="${user.imgUrl}" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <div id="cbody" class="card-body">
             <h5 class="card-title">${user.name}</h5>
             <p class="card-text">${user.house}</p>
           </div>
-            <button type="button" id="expel--${user.id}">Expel</button>
+            ${btn(user)}
         </div>
       </div>
     </div>`
-  };
+  }
   return domString;
 };
 
@@ -149,7 +157,7 @@ const eventListeners = () => {
   const buttonContainer = document.querySelector("#button-container");
   const form = document.querySelector("form");
   const cards = document.querySelector("#houses");
-  const expel = document.querySelector("#expel");
+
 
   buttonContainer.addEventListener("click", (e) => {
     switch (e.target.id) {
@@ -180,6 +188,7 @@ const eventListeners = () => {
   cards.addEventListener("click", (e) => {
 
     if (e.target.id.includes("expel")) {
+       
        const [, id] = e.target.id.split("--");
        const index = users.findIndex(user => user.id === Number(id));
        users[index].mvArmy = true;
