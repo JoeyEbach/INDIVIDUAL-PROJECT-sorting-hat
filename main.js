@@ -21,7 +21,7 @@ const users = [
   id: 4,
   name: "Joey",
   house: "Slytherin",
-  mvArmy: true,
+  mvArmy: false,
 }
 ];
 
@@ -33,9 +33,11 @@ const pic = () => {
     user.imgUrl = "https://cdn.shopify.com/s/files/1/1541/8579/files/Hufflepuff-harry_potter_large.JPG?v=1491538917"
   } else if (user.house === "Gryffindor") {
     user.imgUrl = "https://m.media-amazon.com/images/I/71qheAe+f6L.jpg"
-  } else {
+  } else if (user.house === "Slytherin") {
     user.imgUrl = "https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88362/91127/Harry-Potter-Slytherin-Crest-Official-wall-mounted-cardboard-cutout-buy-now-at-star__31920.1507640618.jpg?c=2"
-  }
+  } else {
+    user.imgUrl = "https://easy.ink/cdn/shop/products/Dark_Mark_ve_300x.jpg?v=1607282906"
+  };
 });
 };
 
@@ -64,6 +66,14 @@ const btn = (array) => {
   return btnShow;
 };
 
+const darkSide = (array => {
+  let joinDark = "";
+  if (array.mvArmy) {
+    joinDark += `<p>&#9760 ${array.name} has now joined Voldemort's Army</p>`
+  }; 
+return joinDark;
+});
+
 const cardsOnDom = (array) => {
   let domString = ""
   pic();
@@ -79,6 +89,7 @@ const cardsOnDom = (array) => {
           <div id="cbody" class="card-body">
             <h5 class="card-title">${user.name}</h5>
             <p class="card-text">${user.house}</p>
+            ${darkSide(user)}
           </div>
             ${btn(user)}
         </div>
@@ -192,6 +203,7 @@ const eventListeners = () => {
        const [, id] = e.target.id.split("--");
        const index = users.findIndex(user => user.id === Number(id));
        users[index].mvArmy = true;
+       users[index].house = "Dark Side";
    }
    cardsFilter(users);
   });
