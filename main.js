@@ -36,7 +36,7 @@ const pic = () => {
   } else if (user.house === "Slytherin") {
     user.imgUrl = "https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88362/91127/Harry-Potter-Slytherin-Crest-Official-wall-mounted-cardboard-cutout-buy-now-at-star__31920.1507640618.jpg?c=2"
   } else {
-    user.imgUrl = "https://easy.ink/cdn/shop/products/Dark_Mark_ve_300x.jpg?v=1607282906"
+    user.imgUrl = "https://e0.pxfuel.com/wallpapers/118/139/desktop-wallpaper-the-dark-mark-voldemort-dark-mark-harry-potter-harry-potter-pin-harry-potter-dark-mark.jpg"
   };
 });
 };
@@ -61,7 +61,7 @@ const buttonsOnDom = () => {
 const btn = (array) => {
   let btnShow = "";
     if (!array.mvArmy) {
-      btnShow += `<button type="button" id="expel--${array.id}">Expel</button>`
+      btnShow += `<button type="button" class="cbtn" id="expel--${array.id}">Expel</button>`
     }; 
   return btnShow;
 };
@@ -69,7 +69,7 @@ const btn = (array) => {
 const darkSide = (array => {
   let joinDark = "";
   if (array.mvArmy) {
-    joinDark += `<p>&#9760 ${array.name} has now joined Voldemort's Army</p>`
+    joinDark += `<p id="dark">&#9760 ${array.name} has now joined Voldemort's Army</p>`
   }; 
 return joinDark;
 });
@@ -91,7 +91,9 @@ const cardsOnDom = (array) => {
             <p class="card-text">${user.house}</p>
             ${darkSide(user)}
           </div>
+          <div id="expelDiv">
             ${btn(user)}
+          </div>
         </div>
       </div>
     </div>`
@@ -120,14 +122,14 @@ const formOnDom = () => {
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="userForm">
               <div class="mb-3">
-                  <label for="name" class="form-label">Student:</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                  <label for="name" class="form-label">Student Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Harry Potter" aria-describedby="emailHelp" required>
               </div> 
               <div class="modal-footer" id="buttons">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
