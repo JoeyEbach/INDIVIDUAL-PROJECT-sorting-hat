@@ -1,4 +1,4 @@
-**Project Name: "Harry Potter's Sorting Hats"
+Project Name: "Harry Potter's Sorting Hats"
 Project Overview: Harry Potter's Sorting Hats is a game where users can put on the sorting hat (enter their name in the form) and be randomly assigned a house, or a school of learning. The site displays two sides: the Houses and Voldemort's Army. Users have the ability to expel themselves, or other users, which permanently moves their card from the Houses to Voldemort's Army.  
 Wireframe: https://www.figma.com/file/l3X75HKPYiEah4gJVQeItG/Harry-Potter's-Sorting-Hat?type=design&t=GOSYNfzGNDW4lFEY-6
 Data Flowchart: https://github.com/JoeyEbach/INDIVIDUAL-PROJECT-sorting-hat/assets/137849948/28457954-6480-4e4a-a443-34eeb02f85ae
