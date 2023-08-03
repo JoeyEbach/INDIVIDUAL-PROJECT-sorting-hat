@@ -15,7 +15,7 @@ Project Screenshots:
    [2] https://github.com/JoeyEbach/INDIVIDUAL-PROJECT-sorting-hat/assets/137849948/f9fa12b9-bb4d-4758-9a7e-4ee2bd31ded7
    [3] https://github.com/JoeyEbach/INDIVIDUAL-PROJECT-sorting-hat/assets/137849948/67a91e96-5a47-4257-bc8e-ae187d765cf5
 Contributors: Joey Ebach [https://github.com/JoeyEbach]
-Loom Video Walkthrough: 
+Loom Video Walkthrough: https://www.loom.com/share/0abf0d0d34824889b31343e07fc1fde2
 
 
 
