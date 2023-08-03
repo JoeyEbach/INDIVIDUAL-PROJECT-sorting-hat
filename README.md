@@ -1,3 +1,36 @@
+Project Name: "Harry Potter's Sorting Hats"
+Project Overview: Harry Potter's Sorting Hats is a game where users can put on the sorting hat (enter their name in the form) and be randomly assigned a house, or a school of learning. The site displays two sides: the Houses and Voldemort's Army. Users have the ability to expel themselves, or other users, which permanently moves their card from the Houses to Voldemort's Army.  
+Wireframe: https://www.figma.com/file/l3X75HKPYiEah4gJVQeItG/Harry-Potter's-Sorting-Hat?type=design&t=GOSYNfzGNDW4lFEY-6
+Data Flowchart: https://github.com/JoeyEbach/INDIVIDUAL-PROJECT-sorting-hat/assets/137849948/28457954-6480-4e4a-a443-34eeb02f85ae
+Deployed Site: https://ebach-sorting-hats.netlify.app/
+Project Board: https://github.com/users/JoeyEbach/projects/1
+User Description | Problem Solved: As a developer, it is important to know how to access and manipulate data in order to present it to the site user in an organized fashion. In this repo, I have code samples that show how I have worked with data arrays and objects in order to provide the best site user experience. 
+Features: 
+   [1] Dynamically rendered cards displaying user information and category (house)
+   [2] Card filtering buttons based on the user's category (house)
+   [3] Form modal that appears upon click and offers the ability to dynamically add new user cards
+   [4] Expel buttons that permanently remove a user card from their house category and moves them to the army category 
+Project Screenshots: 
+   [1] https://github.com/JoeyEbach/INDIVIDUAL-PROJECT-sorting-hat/assets/137849948/f1cd7631-7951-4fca-be79-4f3662afcda7
+   [2] https://github.com/JoeyEbach/INDIVIDUAL-PROJECT-sorting-hat/assets/137849948/f9fa12b9-bb4d-4758-9a7e-4ee2bd31ded7
+   [3] https://github.com/JoeyEbach/INDIVIDUAL-PROJECT-sorting-hat/assets/137849948/67a91e96-5a47-4257-bc8e-ae187d765cf5
+Contributors: Joey Ebach [https://github.com/JoeyEbach]
+Loom Video Walkthrough: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_____________________________________________________________________________________________________________________________________________________________
 # Sorting Hat
 
 ## Goals
